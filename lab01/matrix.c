@@ -1,152 +1,66 @@
-/* Parallel Matrix-Matrix Multiply Program using POSIX Threads */
-/* Wes Laurion - 2012 */
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include <pthread.h>
 
-#define AROWS 8
-#define ACOLS 6
-#define BROWS 6
-#define BCOLS 10
-#define PTHREADS 3
+#define M 3
+#define K 2
+#define N 3
+#define NUM_THREADS 10
 
-/* Define the Matrix data type */
-typedef struct Matrix {
-int r, c;
-int *contents;
-int **rows;
-}Matrix;
+int A [M][K] = { {1,4}, {2,5}, {3,6} };
+int B [K][N] = { {8,7,6}, {5,4,3} };
+int C [M][N];
 
-int rows_per_proc;
-Matrix A, B, C;
-pthread_t tid[PTHREADS];
+struct v {
+   int i; /* row */
+   int j; /* column */
+};
 
-/* Function Definitions */
-Matrix createMatrix(int rows, int cols);
-void *MatrixMult(void *tid);
-void printMatrices(Matrix A, Matrix B, Matrix C);
+void *runner(void *param); /* the thread */
 
-void main() {
-int rw, cl, i, err;
+int main(int argc, char *argv[]) {
 
-/* Create and initialize three matrices. First two to be multiplied and third to hold result */
-A = createMatrix(AROWS, ACOLS);
-B = createMatrix(BROWS, BCOLS);
-C = createMatrix(AROWS, BCOLS);
+   int i,j, count = 0;
+   for(i = 0; i < M; i++) {
+      for(j = 0; j < N; j++) {
+         //Assign a row and column for each thread
+         struct v *data = (struct v *) malloc(sizeof(struct v));
+         data->i = i;
+         data->j = j;
+         /* Now create the thread passing it data as a parameter */
+         pthread_t tid;       //Thread ID
+         pthread_attr_t attr; //Set of thread attributes
+         //Get the default attributes
+         pthread_attr_init(&attr);
+         //Create the thread
+         pthread_create(&tid,&attr,runner,data);
+         //Make sure the parent waits for all thread to complete
+         pthread_join(tid, NULL);
+         count++;
+      }
+   }
 
-/* Fill matrices A and B with random ints between 0 and 100 */
-srand(time(NULL));
-
-for (rw = 0; rw < AROWS; rw++){
-for (cl = 0; cl < ACOLS; cl++){ 
-A.rows[rw][cl] = rand() % 26;
-}
-}
-
-for (rw = 0; rw < BROWS; rw++){
-for (cl = 0; cl < BCOLS; cl++){ 
-B.rows[rw][cl] = rand() % 26;
-}
-}
-
-/* Rows of C to be calculated by each thread. */
-rows_per_proc = AROWS / PTHREADS;
-
-/* Initialize and start pthreads */
-for(i = 0; i < PTHREADS; i++){
-err = pthread_create(&tid[i], NULL, MatrixMult, void *i);
-if(err == 0) printf("Thread %d started successfully!\n", i);
-else printf("Thread %d did not start successfully.\n", i);
+   //Print out the resulting matrix
+   for(i = 0; i < M; i++) {
+      for(j = 0; j < N; j++) {
+         printf("%d ", C[i][j]);
+      }
+      printf("\n");
+   }
 }
 
-for(i = 0; i < PTHREADS; i++){
-err = pthread_join(tid[i], NULL);
-if(err == 0) printf("Thread %d joined successfully!\n", i);
-else printf("Thread %d did not join successfully.\n", i);
-}
+//The thread will begin control in this function
+void *runner(void *param) {
+   struct v *data = param; // the structure that holds our data
+   int n, sum = 0; //the counter and sum
 
-printMatrices(A, B, C);
-printf("Press Enter to Exit: ");
-scanf("Exit");
-}
+   //Row multiplied by column
+   for(n = 0; n< K; n++){
+      sum += A[data->i][n] * B[n][data->j];
+   }
+   //assign the sum to its coordinate
+   C[data->i][data->j] = sum;
 
-Matrix createMatrix(int rows, int cols){
-int i;
-Matrix mtx;
-mtx.r = rows;
-mtx.c = cols;
-
-/* Allocate memory for mtx */
-mtx.contents = (int *) malloc(sizeof(int) * rows * cols);
-mtx.rows = (int **) malloc(sizeof(int *) * rows);
-
-/* find starting memory address of each row of the matrix */
-for (i = 0; i < rows; i++){
-mtx.rows[i] = mtx.contents + i*cols;
+   //Exit the thread
+   pthread_exit(0);
 }
-
-return mtx;
-}
-
-void *MatrixMult(void* tid){
-int i, j, k, total;
-int id = (int)tid;
-int row_start = id*rows_per_proc;
-
-if(id < PTHREADS - 1){
-for (i = row_start; i < row_start + rows_per_proc; i++){
-for (j = 0; j < B.c; j++){
-total = 0;
-for (k = 0; k < A.c; k++){
-total += A.rows[i][k] * B.rows[k][j];
-}
-C.rows[i][j] = total;
-}
-}
-}else{ //last thread gets all leftover rows
-for (i = row_start; i < row_start + (A.r - ((PTHREADS-1)*rows_per_proc)); i++){
-for (j = 0; j < B.c; j++){
-total = 0;
-for (k = 0; k < A.c; k++){
-total += A.rows[i][k] * B.rows[k][j];
-}
-C.rows[i][j] = total;
-}
-}
-}
-}
-
-void printMatrices(Matrix A, Matrix B, Matrix C){
-int i, j;
-
-/* Print Matrix A */
-printf("Matrix A:\n");
-for (i = 0; i < A.r; i++){
-for (j = 0; j < A.c; j++){
-printf("%6d ", A.rows[i][j]);
-}
-printf("\n\n");
-}
-
-/* Print Matrix B */
-printf("Matrix B:\n");
-for (i = 0; i < B.r; i++){
-for (j = 0; j < B.c; j++){
-printf("%6d ", B.rows[i][j]);
-}
-printf("\n\n");
-}
-
-/* Print Matrix C = A*B */
-printf("Matrix C (A * B):\n");
-for (i = 0; i < C.r; i++){
-for (j = 0; j < C.c; j++){
-printf("%6d ", C.rows[i][j]);
-}
-printf("\n\n");
-}
-}
-/* end of file */
-
-
