@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  13 AUG 2016 03:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  13 AUG 2016 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,22 +1180,26 @@ File: 3.png Graphic file (type png)
 Package pdftex.def Info: 3.png used on input line 123.
 (pdftex.def)             Requested size: 293.09427pt x 95.356pt.
 
-[3 <./3.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+[3 <./3.png>] <4.png, id=104, 623.32875pt x 292.09125pt>
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 138.
+(pdftex.def)             Requested size: 436.32715pt x 204.46246pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+ [4 <./4.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
  (./format.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `format.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 18552 strings out of 494724
- 305926 string characters out of 6174698
- 499171 words of memory out of 5000000
- 21441 multiletter control sequences out of 15000+600000
+ 18558 strings out of 494724
+ 305978 string characters out of 6174698
+ 499172 words of memory out of 5000000
+ 21445 multiletter control sequences out of 15000+600000
  5618 words of font info for 21 fonts, out of 8000000 for 9000
  102 hyphenation exceptions out of 8191
  70i,13n,59p,1009b,1867s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1204,10 +1208,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on format.pdf (4 pages, 222869 bytes).
+Output written on format.pdf (4 pages, 253852 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 90 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
