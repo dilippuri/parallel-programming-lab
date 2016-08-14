@@ -25,13 +25,24 @@
 /* dot product loop */
 for (i = 0; i < dim; i++)
 	dot_prod += a[i] * b[i];
-\end{lstlisting}
-\textbf{Answer}:
-\lstset{language=C}
-\begin{lstlisting}[frame=single]
-/* dot product loop */
-for (i = 0; i < dim; i++)
-	dot_prod += a[i] * b[i];
+-----------------------------------------------------
+Answer:
+
+	Main memory = 512 MB
+	Cache = 32 KB
+	Processor operating at 1 GHz
+	L1 cache latency = 1 cycle
+	L2 or main memory latency = 100 cycle
+	In 1 memory cycle processor fetch no. of words = 4
+	cache line size = 4 words
+	Peak Performance = no. of maximum floating pt(arithmatic) operations
+	so,
+		
+			1 cycle takes 1/(1x10^9) seconds.
+			One access to memory takes 100/(1x10^9) seconds. = 100ns.
+			Performance = 4 FLOPS/(4x100/(1x10^9)) = 10 MFLOPS.
+			
+															-
 \end{lstlisting}
 \item[Problem 2] Now consider the problem of multiplying a dense matrix with a vector using a two-loop dot-product formulation. The matrix is of dimension 4K x 4K. (Each row of the matrix takes 16 KB of storage.) What is the peak achievable performance of this technique using a two-loop dot-product based matrix-vector product?
 \lstset{language=C}
@@ -40,14 +51,12 @@ for (i = 0; i < dim; i++)
 for (i = 0; i < dim; i++)
 	for (j = 0; j < dim; j++)
 		c[i] += a[i][j] * b[i];
-\end{lstlisting}
-\textbf{Answer}:
-\lstset{language=C}
-\begin{lstlisting}[frame=single]
-/* dot product loop */
+-----------------------------------------------------
+Answer:
 
-adf
-adf
+	Main memory = 512 MB
+	Cache = 32 KB
+
 \end{lstlisting}
 \end{enumerate}
 \section*{Linux commands}
@@ -133,11 +142,6 @@ $time ./a.out
 \item thread-1: 1000 sec, thread-2: 5000 sec, thread-3: 20 sec, thread-4: 1200 sec.
 \item Measure the total time taken for the complete execution of code with and without the additional sleep command.\\
 Hint: You will require to include unistd.h for successful compilation.
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=.7]{4.png}
-\caption{time: Get total program execution time in the shell}
-\end{figure}
 \end{enumerate}
 \item Write a C-code using POSIX threads about matrix multiplication.
 \begin{enumerate}
