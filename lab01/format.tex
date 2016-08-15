@@ -40,7 +40,7 @@ Answer:
 		
 			1 cycle takes 1/(1x10^9) seconds.
 			One access to memory takes 100/(1x10^9) seconds. = 100ns.
-			Performance = 4 FLOPS/(4x100/(1x10^9)) = 10 MFLOPS.
+			Performance = 4 FLOPS/(100/(1x10^9)) = 40 MFLOPS.
 			
 															-
 \end{lstlisting}
@@ -148,6 +148,10 @@ Hint: You will require to include unistd.h for successful compilation.
 \item Take overall execution time measurement using time command for different application size and thread count for the serial and parallel code.
 \item Observe gnome-system-monitor output as your fire up different thread counts.
 \item Use the overall execution time measurements to plot and comment upon the speed-up.
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{result.png}
+\end{figure}
 \end{enumerate}
 \end{enumerate}
 \end{document}
