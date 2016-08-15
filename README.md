@@ -6,7 +6,7 @@ Lab - 1
 
 problem - 1  --> done
 
-problem - 2  --> going on
+problem - 2  --> done--
 
 problem - 3  --> done
 

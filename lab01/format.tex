@@ -56,7 +56,11 @@ Answer:
 
 	Main memory = 512 MB
 	Cache = 32 KB
-
+	Dimension of matrix = 4K(16 KB storage)
+			1 cycle takes 1/(1x10^9) seconds.
+			One access to memory takes 100/(1x10^9) seconds. = 100ns.
+			Performance = 8 FLOPS/(100/(1x10^9)) = 80 MFLOPS.
+															-
 \end{lstlisting}
 \end{enumerate}
 \section*{Linux commands}
@@ -66,7 +70,7 @@ $top
 \end{lstlisting}
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=.4]{1.png}
+\includegraphics[scale=.35]{1.png}
 \caption{top: provides dynamic real-time view of individual jobs running on the system}
 \end{figure}
 \begin{lstlisting}[frame=single]
@@ -74,7 +78,7 @@ $gnome-system-monitor
 \end{lstlisting}
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=.5]{2.png}
+\includegraphics[scale=.4]{2.png}
 \caption{gnome-system-monitor: shows which programs are running and how much processor time, memory, and disk space are being used. This gives an overall system view whereas the ``top" instruction represents a detailed perspective}
 \end{figure}
 \begin{lstlisting}[frame=single]
@@ -129,7 +133,7 @@ $time ./a.out
 \end{lstlisting}
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=1]{3.png}
+\includegraphics[scale=.4]{3.png}
 \caption{time: Get total program execution time in the shell}
 \end{figure}
 \section*{Lab Problems}
@@ -150,7 +154,7 @@ Hint: You will require to include unistd.h for successful compilation.
 \item Use the overall execution time measurements to plot and comment upon the speed-up.
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=1]{result.png}
+\includegraphics[scale=.5]{result.png}
 \end{figure}
 \end{enumerate}
 \end{enumerate}
