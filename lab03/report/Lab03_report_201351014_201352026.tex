@@ -1,4 +1,5 @@
 \documentclass{sem5}
+\usepackage{caption}
 \institutename{Indian Institute of Information Technology, Vadodara}
 \author{Dilip Puri}
 \idt{201351014}
@@ -12,42 +13,69 @@
 \type{Lab}
 \typeid{03}
 \submissiondate{\today}%dd/mm/yyyy
-\deadline{Aug 26, 4:00 PM}%dd/mm/yyyy @hh:mm pm/am
+\deadline{Sep 5, 5:00 PM}%dd/mm/yyyy @hh:mm pm/am
 \problemset{OpenMP(Open Multi-Processing)}
 
 \begin{document}
 \begin{enumerate}
 \item Familiarize yourself with the OpenMP code given in this handout.
+\item Using the command in the section on ``How to measure time for a block of C-code", find the time required in the thread function call in the previous lab assignment.\\
 \begin{figure}[!htp]
 \centering
-%\includegraphics[scale=.4]{../barrier.png}\\
-%\includegraphics[scale=.4]{../rwlock.png}
+\includegraphics[scale=.4]{../2.png}
+\caption{Elapsed time: 0.002498 seconds}
 \end{figure}
-\item Using the command in the section on ``How to measure time for a block of C-code", find the time required in the thread function call in the previous lab assignment.\\
-
 \item Write a C-code using OpenMP threads to create an unbalanced load using sleep command and omp$\_$hello.c. The sample sleep times are given below:
 \begin{enumerate}
 \item thread-1: 10 sec, thread-2: 5 sec, thread-3: 20 sec, thread-4: 30 sec.
-\item Measure the total time taken for the complete execution of code with and without the additional sleep command.
+\item Measure the total time taken for the complete execution of code with and without the additional sleep command.\\
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=.6]{../31.png}
+\caption{with sleep() command execution}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=.6]{../32.png}
+\caption{without sleep() command execution}
+\end{figure}
 \end{enumerate}
 
 \item Write a threaded code using OpenMP on matrix multiplication:
 \begin{enumerate}
 \item Take overall execution time measurement using time command for different application size and thread count for the serial and parallel code.
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|}
+\captionof{table}{Execution Time}
+\begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
-& p=1 & p=2 & p=4 & p=8\\
+Application Size & p=1 & p=2 & p=4 & p=8 & p=16 & p=32\\
 \hline
-Vector Length = 100,000 & 0.0095 & 0.0124 & 0.0121 & 0.0102 \\
+5x5 & &&&&&\\
 \hline
-Vector Length = 200,000 & 0.014 & 0.0166 & 0.0121 & 0.0163 \\
+10x10 & &&&&&\\
+\hline
+100x100 & &&&&&\\
+\hline
+500x500 & &&&&&\\
+\hline
+1000x1000 & &&&&&\\
+\hline
+5000x5000 & &&&&&\\
+\hline
+10000x10000 & &&&&&\\
 \hline
 \end{tabular}
+\end{center}
 
-$Speedup = \frac{Execution Time(p)}{Execution Time(serial code)}$\\
-\vspace*{1cm}
+\begin{center}
+$Speedup = \frac{Execution Time(p)}{Execution Time(serial code)}$
+\end{center}
+
+\begin{center}
+\captionof{table}{Speedup Time}
 \begin{tabular}{|c|c|c|c|}
+
 \hline
  & p=2 & p=4 & p=8\\
 \hline

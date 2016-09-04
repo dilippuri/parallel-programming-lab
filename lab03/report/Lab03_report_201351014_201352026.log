@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  1 SEP 2016 01:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  4 SEP 2016 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,38 +1024,57 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 ))
 *** Document Class 'sem5' for assignment, tutorial, labs, and report
-) (./Lab03_report_201351014_201352026.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen190
+\captionmargin@=\dimen191
+\captionwidth=\dimen192
+\caption@tempdima=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+)
+\c@ContinuedFloat=\count231
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(./Lab03_report_201351014_201352026.aux)
 \openout1 = `Lab03_report_201351014_201352026.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-\c@lstlisting=\count231
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+\c@lstlisting=\count232
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count232
-\scratchdimen=\dimen190
+\scratchcounter=\count233
+\scratchdimen=\dimen197
 \scratchbox=\box68
-\nofMPsegments=\count233
 Normal \count register pool exhausted, switching to extended pool.
-\nofMParguments=\count277
+\nofMPsegments=\count277
+\nofMParguments=\count278
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count278
-\MPscratchDim=\dimen191
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen198
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1078,18 +1097,18 @@ e
 Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count281
+\c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./Lab03_report_201351014_201352026.out)
 (./Lab03_report_201351014_201352026.out)
@@ -1098,7 +1117,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 
  ABD: EveryShipout initializing macros
 
-Package layouts Warning: Layout scale set to 0.5 on input line 18.
+Package layouts Warning: Layout scale set to 0.5 on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1134,28 +1153,31 @@ Package layouts Warning: Layout scale set to 0.5 on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-Overfull \hbox (5.02939pt too wide) in paragraph at lines 18--19
+Overfull \hbox (5.02939pt too wide) in paragraph at lines 19--20
 \OT1/cmr/m/n/12 ---------------------------------------------------------------
 -----------------------------------------------------------------------
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
+<../2.png, id=7, 1013.7875pt x 218.8175pt>
+File: ../2.png Graphic file (type png)
+ <use ../2.png>
+Package pdftex.def Info: ../2.png used on input line 25.
+(pdftex.def)             Requested size: 405.50783pt x 87.52544pt.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -1168,35 +1190,57 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<../31.png, id=8, 277.035pt x 186.6975pt>
+File: ../31.png Graphic file (type png)
+ <use ../31.png>
+Package pdftex.def Info: ../31.png used on input line 34.
+(pdftex.def)             Requested size: 166.22227pt x 112.01935pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+<../32.png, id=9, 276.03125pt x 184.69pt>
+File: ../32.png Graphic file (type png)
+ <use ../32.png>
+Package pdftex.def Info: ../32.png used on input line 40.
+(pdftex.def)             Requested size: 165.62001pt x 110.81483pt.
 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 49.
+See the caption package documentation for explanation.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../2.png> <../31.png>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 76.
+See the caption package documentation for explanation.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+[2 <../32.png>] [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./Lab03_report_201351014_201352026.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `Lab03_report_201351014_201352026.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 18034 strings out of 494724
- 301574 string characters out of 6174698
- 450171 words of memory out of 5000000
- 20979 multiletter control sequences out of 15000+600000
+ 19054 strings out of 494724
+ 320160 string characters out of 6174698
+ 451172 words of memory out of 5000000
+ 21982 multiletter control sequences out of 15000+600000
  9977 words of font info for 40 fonts, out of 8000000 for 9000
  102 hyphenation exceptions out of 8191
- 70i,12n,59p,1103b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,12n,59p,1055b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1205,10 +1249,11 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on Lab03_report_201351014_201352026.pdf (2 pages, 89463 bytes).
+Output written on Lab03_report_201351014_201352026.pdf (3 pages, 145478 bytes).
+
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
