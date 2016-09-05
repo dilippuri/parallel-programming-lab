@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  5 SEP 2016 15:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.3)  5 SEP 2016 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,28 +1216,35 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 76.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+<../t32.png, id=27, 679.53876pt x 649.42625pt>
+File: ../t32.png Graphic file (type png)
+ <use ../t32.png>
+Package pdftex.def Info: ../t32.png used on input line 101.
+(pdftex.def)             Requested size: 203.8632pt x 194.82938pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <../32.png>] [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+[2 <../32.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+ [3 <../t32.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./Lab03_report_201351014_201352026.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `Lab03_report_201351014_201352026.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 19054 strings out of 494724
- 320160 string characters out of 6174698
- 451172 words of memory out of 5000000
- 21982 multiletter control sequences out of 15000+600000
+ 19060 strings out of 494724
+ 320242 string characters out of 6174698
+ 450172 words of memory out of 5000000
+ 21986 multiletter control sequences out of 15000+600000
  9977 words of font info for 40 fonts, out of 8000000 for 9000
  102 hyphenation exceptions out of 8191
  70i,12n,59p,1055b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1249,11 +1256,11 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on Lab03_report_201351014_201352026.pdf (3 pages, 145748 bytes).
+Output written on Lab03_report_201351014_201352026.pdf (3 pages, 201848 bytes).
 
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -74,20 +74,34 @@ $Speedup = \frac{Execution Time(p)}{Execution Time(serial code)}$
 
 \begin{center}
 \captionof{table}{Speedup Time}
-\begin{tabular}{|c|c|c|c|}
-
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
- & p=2 & p=4 & p=8\\
+Application Size & p=2 & p=4 & p=8 & p=16 & p=32\\
 \hline
-Vector Length = 100,000 & 1.31 & 1.27 & 1.07 \\
+5x5 &0.000009&0.000050&0.000115&0.000317&0.000484\\
 \hline
-Vector Length = 200,000 & 1.19 & 1.26 & 1.16 \\
+10x10 &0.000021&0.000082&0.000236&0.000263&0.000416\\
+\hline
+100x100& 0.026991&0.027809&0.021341&0.021806&0.027567\\
+\hline
+500x500 &0.787767&1.368984&1.394844&1.349535&1.441614\\
+\hline
+1000x1000  &6.348322&15.236813&14.245590&14.108841&14.337918\\
+\hline
+5000x5000  &&&&&\\
+\hline
+10000x10000  &&&&&\\
 \hline
 \end{tabular}
 
 \end{center}
-\item Observe \texttt{gnome-system-monitor} output as your fire up different thread counts.
-
+\item Observe \texttt{gnome-system-monitor} output as your fire up different thread counts.\\
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=.3]{../t32.png}
+\caption{for 32 threads 5000x5000}
+\end{figure}
+\newpage
 \item Use the overall execution time measurements to plot and comment upon the speed-up. Verify that:
 \begin{enumerate}
 \item Parallel execution time is more compared to the serial time when the application size is small.
