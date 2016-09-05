@@ -93,7 +93,15 @@ Application Size & p=2 & p=4 & p=8 & p=16 & p=32\\
 \includegraphics[scale=.3]{../t32.png}
 \caption{for 32 threads 5000x5000}
 \end{figure}
-\item Use the overall execution time measurements to plot and comment upon the speed-up. Verify that:
+\item Use the overall execution time measurements to plot and comment upon the speed-up. Verify that:\\
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=.4]{../speedup2.png}
+\end{figure}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=.4]{../speedup1.png}
+\end{figure}
 \begin{enumerate}
 \item Parallel execution time is more compared to the serial time when the application size is small.
 \item For large application size, initially the speedup increases as you increase the number of threads. However, for very large number of threads (e.g. 64 threads) your performance becomes much worse w.r.t. serial code and lower thread count.
