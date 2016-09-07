@@ -4,7 +4,6 @@
 #include <time.h>
 
 // OpenMP Parallelization of Matrix Multiplication
-
 #define N 5000
 #define NUM_OF_THREADS 32
 float A[N][N], B[N][N], C[N][N]; // declaring matrices of NxN size

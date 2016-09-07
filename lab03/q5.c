@@ -17,6 +17,7 @@ void fill_rand(int length, double *a)
    int i;
    for (i=0;i<length;i++) {
      randy = (RAND_MULT * randy + RAND_ADD) % RAND_MOD;
+     printf("produced\n");
      *(a+i) = ((double) randy)/((double) RAND_MOD);
    }
 }
@@ -25,7 +26,9 @@ void fill_rand(int length, double *a)
 double Sum_array(int length, double *a)
 {
    int i;  double sum = 0.0;
-   for (i=0;i<length;i++)  sum += *(a+i);
+   for (i=0;i<length;i++){
+   printf("consumed\n");
+     sum += *(a+i);}
    return sum;
 }
 
