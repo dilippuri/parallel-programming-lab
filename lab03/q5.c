@@ -1,6 +1,6 @@
-#include<stdlib.h>
-#include<unistd.h>
-#include<omp.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <omp.h>
 #define N 250
 
 
