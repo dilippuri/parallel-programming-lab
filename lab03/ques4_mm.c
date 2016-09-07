@@ -20,7 +20,6 @@ int i, j, m; // indices for matrix multiplication
 
    /* FILLING MATRICES WITH RANDOM NUMBERS */
 
-srand ( time(NULL) );
 for(i=0;i<N;i++) {
     for(j=0;j<N;j++) {
       A[i][j]= (rand()%10);
