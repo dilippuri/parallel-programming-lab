@@ -44,9 +44,25 @@ To decompose matrix A into L and U we are using Doolittle's method which is desc
 \lstinputlisting[frame=single, basicstyle=\small\ttfamily, caption=Code, language=C]{../lu.c}
 \newpage
 \section{Analysis using Valgrind}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Size & Time \\
+\hline
+2x2 & 0m4.699s\\
+\hline
+3x3 & 0m9.880s\\
+\hline
+4x4 & 0m17.671s\\
+\hline
+
+\end{tabular}
+\end{center}
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=.5]{11.png}
 \caption{code analysis with valgrind and kchachegrind}
 \end{figure}
+You can find cachegrind here
+\url{https://raw.githubusercontent.com/dilippuri/parallel-programming-lab/master/projects/project_1/cachegrind.out.5590}
 \end{document}
