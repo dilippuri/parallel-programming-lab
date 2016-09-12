@@ -6,11 +6,11 @@ int main(void){
     printf("Enter the order of square matrix: ");
     scanf("%d",&n);
 
-    float A[n][n],L[n][n], U[n][n];
-    
+    float A[n][n],L[n][n], U[n][n];//initializing matrices
+
     printf("Enter matrix element:\n");
 
-    for(i=0; i<n; i++)
+    for(i=0; i<n; i++)  //matrix input from console
     {
         for(j=0; j<n; j++)
         {
@@ -18,27 +18,27 @@ int main(void){
             scanf("%f",&A[i][j]);
         }
     }
-
-    for(j=0; j<n; j++)
+    //DooLittle's Algo.
+    for(j=0; j<n; j++)  //over row element
     {
-        for(i=0; i<n; i++)
+        for(i=0; i<n; i++)//over column element
         {
-            if(i<=j)
+            if(i<=j)      //check for diagonal and lower elements
             {
                 U[i][j]=A[i][j];
                 for(k=0; k<=i-1; k++)
-                    U[i][j]-=L[i][k]*U[k][j];
+                    U[i][j] = U[i][j] - L[i][k]*U[k][j];
                 if(i==j)
                     L[i][j]=1;
                 else
                     L[i][j]=0;
             }
-            else
+            else          //check for upper elements
             {
                 L[i][j]=A[i][j];
                 for(k=0; k<=j-1; k++)
-                    L[i][j]-=L[i][k]*U[k][j];
-                L[i][j]/=U[j][j];
+                    L[i][j]= L[i][j] - L[i][k]*U[k][j];
+                L[i][j] = L[i][j] / U[j][j];
                 U[i][j]=0;
             }
         }
