@@ -17,13 +17,12 @@ int consumptionCount = 0;
 int X=0;
 
 int produceItem(){
-  //return rand() % 10;
     return X++;	
 }
 
 void putItemIntoBuffer(int arg_item, int h){
   sharedBuffer[index1] = item;
-  printf("Thread=%d->%d added to the buffer @ index=%d\n",h, arg_item, index1);	
+  printf("Thread=%d->%d added to the buffer at index=%d\n",h, arg_item, index1);	
 } 
 
 int removeItemFromBuffer(){
@@ -37,56 +36,50 @@ printf("Thread=%d->Consumed item:%d\n",j, arg_item);
 void *producer(int i) {
 #pragma omp parellel
 {
-printf("Thead:%d",i);	
+  printf("Thead:%d",i);	
     while(productionCount < TRANSACTIONS) {
         item = produceItem();
-        //sem_wait(&emptyCount);
-	#pragma omp crtical
-	{
-                int id;
-		id = (int) i;
-		if(index1 != BUFFER_SIZE){
-                putItemIntoBuffer(item,id);
-		}
-		index1 = (index1 + 1) % BUFFER_SIZE;
-         }
-        //sem_post(&fillCount);
-	productionCount++;
+        #pragma omp crtical
+    	{
+                    int id;
+    		id = (int) i;
+    		if(index1 != BUFFER_SIZE){
+                    putItemIntoBuffer(item,id);
+    		}
+    		index1 = (index1 + 1) % BUFFER_SIZE;
+             }
+            
+	     productionCount++;
     }
-exit(0);
+  exit(0);
 }
 }
 
 void *consumer(int k) {
-#pragma omp parellel
-{
-    while (consumptionCount < TRANSACTIONS) {
-        //sem_wait(&fillCount);
-	int id; 
-	id = (int) k;
-        #pragma omp critical
-	{
-		
-		if(index2 != 0){
-                item = removeItemFromBuffer();
-		}
-		index2= ((index2 + 1) % BUFFER_SIZE);
+  #pragma omp parellel
+  {
+      while (consumptionCount < TRANSACTIONS) {
+      	int id; 
+      	id = (int) k;
+              #pragma omp critical
+      	{
+  		
+      		if(index2 != 0){
+                      item = removeItemFromBuffer();
+      		}
+      		index2= ((index2 + 1) % BUFFER_SIZE);
         }
-        //sem_post(&emptyCount);
-        consumeItem(item,id);
-	consumptionCount++;
-    }
-exit(0);
-}
+              //sem_post(&emptyCount);
+              consumeItem(item,id);
+      	consumptionCount++;
+      }
+  exit(0);
+  }
 }
 
 int main(int argc, char *argv[]){
 
-
 int tid,nthreads;
-
-
-
 #pragma omp parallel shared(nthreads) private(tid)
 
   {
@@ -106,64 +99,45 @@ int tid,nthreads;
   printf("Thread %d starting...\n",tid);
 
   #pragma omp sections 
-
     {
-
     #pragma omp section
-
-      {
-
-	      producer(tid);
+    {
+    producer(tid);
       }
 
     #pragma omp section
-
       {
-
 	      consumer(tid);
       }
 
     #pragma omp section
-
       {
-
 	      producer(tid);
       }
 
     #pragma omp section
-
       {
-
-	consumer(tid);
+      	consumer(tid);
       }
 
     #pragma omp section
-
       {
-	
-	            producer(tid);
-
-      }
+	        producer(tid);
+    }
     #pragma omp section
 
       {
-	
-	consumer(tid);
+      	consumer(tid);
 
       }
     #pragma omp section
-
       {
-	
 	      producer(tid);
-
       }  
+
     #pragma omp section
-
       {
-	
 	      consumer(tid);
-
       }
 }
 }	return 0;
