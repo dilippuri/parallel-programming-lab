@@ -216,8 +216,38 @@ so what are implementing here is: \texttt{Doolittle's method}
 %\hspace*{1.5cm}	end\\
 %\hspace*{1cm}	end\\
 %end	
-\includegraphics[scale=.3]{pic.png}\\
-\includegraphics[scale=.35]{pic1.png}
+\begin{center}
+\includegraphics[scale=.28]{algo.png}\\
+\includegraphics[scale=.3]{pic1.png}
+\end{center}
+\end{frame}
+
+\section{Tasks}
+\begin{frame}{Task Generation and Dependency Graph}
+\begin{columns}
+\begin{column}{4cm}
+\begin{enumerate}
+\item $L_{11}$ = $a_{11}$
+\item $L_{21}$ = $a_{21}$
+\item $L_{31}$ = $a_{31}$
+\item $U_{12}$ = $\frac{a_{12}}{L_{11}}$
+\item $L_{22}$ = $a_{22} - L_{21}U_{12}$
+\item $L_{32}$ = $a_{32} - L_{31}U_{12}$
+\item $U_{13}$ = $\frac{a_{13}}{L_{11}}$
+\item $U_{23}$ = $\frac{a_{23} - L_{23}U_{13}}{L_{22}}$
+\item $L_{33}$ = $a_{33} - L_{31}U_{13} - L_{32}U_{23}$
+\end{enumerate}
+\end{column}
+\begin{column}{7cm}
+\includegraphics[scale=.5]{taskdep.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Performance}
+\begin{frame}{Complexity}
+Time  = O($n^3$)
+Space = Two nxn matrices space
 \end{frame}
 
 \section{What is Next ??}
