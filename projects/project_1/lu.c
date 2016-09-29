@@ -3,12 +3,10 @@
 int main(void){
 
     int i,j,k,n;
-    printf("Enter the order of square matrix: ");
-    scanf("%d",&n);
+    n=3;
+    float A[3][3] = { { 1, 2, 3 }, { 3, 4, 5 }, { 5, 6, 7 } }, L[n][n], U[n][n];//initializing matrices
 
-    float A[n][n],L[n][n], U[n][n];//initializing matrices
-
-    printf("Enter matrix element:\n");
+  /*  printf("Enter matrix element:\n");
 
     for(i=0; i<n; i++)  //matrix input from console
     {
@@ -17,7 +15,7 @@ int main(void){
             printf("Enter A[%d][%d] element: ", i,j);
             scanf("%f",&A[i][j]);
         }
-    }
+    }*/
     //DooLittle's Algo.
     for(j=0; j<n; j++)  //over row element
     {
