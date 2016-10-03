@@ -49,7 +49,8 @@ there are many events when threads run on invalid time such as: \\
 \item  the put runs faster with 4 cores than 2 cores, but not 4 times as fast as a single core. \\
 
 \includegraphics[scale=0.7]{result.png} \\
-
+Output of fixed code\\
+\includegraphics[scale=0.7]{fixed.png}\\
 as we can see in the figure that is the result when the threads are run for 2 threads and 4 threads, the time taken on 4 threads is less but not the half of the time taken when 4 threads are used. 
 this is happening when there occurs the data race condition as multiple threads tries to get the lock but the threads have to wait for the other thread to unlock the mutex lock. 
 so more the threads more will be the race condition occurred.\\
@@ -94,11 +95,10 @@ Here we have taken mutex lock for the process that i have described above the fi
 
 \begin{enumerate}
 \item cycles in the put function\\\\
-\includegraphics[scale=0.7]{cycles_in_put.png}\\
+\includegraphics[scale=0.6]{cycles_in_put.png}\\
 This is the screen shot showing that the if statement after the for loop is taking the maximum cycles as it has to check on every thread call whether the particular location is available or not to read the data.
- \newpage
-\item cycles in the get function\\\\
-\includegraphics[scale=0.7]{cycles_in_get.png}
+\item cycles in the get function\\
+\includegraphics[scale=0.6]{cycles_in_get.png}
 
 In put function also the if condition which is running after the for loop is taking the maximum cycles of the other functions.
 

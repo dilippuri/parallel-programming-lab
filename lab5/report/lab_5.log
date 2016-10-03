@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.2)  3 OCT 2016 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.2)  3 OCT 2016 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,28 +1196,34 @@ File: result.png Graphic file (type png)
 Package pdftex.def Info: result.png used on input line 51.
 (pdftex.def)             Requested size: 454.59528pt x 195.3284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+<fixed.png, id=32, 701.62125pt x 129.48375pt>
+File: fixed.png Graphic file (type png)
+ <use fixed.png>
+Package pdftex.def Info: fixed.png used on input line 53.
+(pdftex.def)             Requested size: 491.13152pt x 90.63799pt.
+
+Overfull \hbox (28.51572pt too wide) in paragraph at lines 51--57
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-<helgring_output.png, id=32, 663.47874pt x 180.675pt>
+<helgring_output.png, id=33, 663.47874pt x 180.675pt>
 File: helgring_output.png Graphic file (type png)
 
 <use helgring_output.png>
-Package pdftex.def Info: helgring_output.png used on input line 67.
+Package pdftex.def Info: helgring_output.png used on input line 68.
 (pdftex.def)             Requested size: 464.43195pt x 126.47162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
@@ -1227,35 +1233,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./result.png> <./helgring_output.png>]
-<cycles_in_put.png, id=39, 682.55pt x 339.2675pt>
+[2 <./result.png> <./fixed.png>]
+<cycles_in_put.png, id=40, 682.55pt x 339.2675pt>
 File: cycles_in_put.png Graphic file (type png)
  <use cycles_in_put.png>
-Package pdftex.def Info: cycles_in_put.png used on input line 97.
-(pdftex.def)             Requested size: 477.78175pt x 237.48563pt.
+Package pdftex.def Info: cycles_in_put.png used on input line 98.
+(pdftex.def)             Requested size: 409.53316pt x 203.56206pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
-
-Overfull \hbox (15.16595pt too wide) in paragraph at lines 96--99
-[] 
- []
-
-[3 <./cycles_in_put.png>]
-<cycles_in_get.png, id=59, 639.38875pt x 336.25626pt>
+[3 <./helgring_output.png>]
+<cycles_in_get.png, id=60, 639.38875pt x 336.25626pt>
 File: cycles_in_get.png Graphic file (type png)
  <use cycles_in_get.png>
 Package pdftex.def Info: cycles_in_get.png used on input line 101.
-(pdftex.def)             Requested size: 447.56906pt x 235.37776pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
-
- []
-
+(pdftex.def)             Requested size: 383.6362pt x 201.75531pt.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-[4 <./cycles_in_get.png>]
+
+[4 <./cycles_in_put.png> <./cycles_in_get.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./lab_5.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
@@ -1265,10 +1262,10 @@ Package rerunfilecheck Info: File `lab_5.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 18850 strings out of 494985
- 309308 string characters out of 6180356
+ 18855 strings out of 494985
+ 309372 string characters out of 6180356
  454773 words of memory out of 5000000
- 21673 multiletter control sequences out of 15000+600000
+ 21677 multiletter control sequences out of 15000+600000
  5618 words of font info for 21 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  70i,12n,59p,1076b,1706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1277,10 +1274,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lab_5.pdf (4 pages, 239835 bytes).
+Output written on lab_5.pdf (4 pages, 257423 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
  28 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
