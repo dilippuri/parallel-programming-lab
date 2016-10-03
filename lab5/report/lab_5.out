@@ -1,0 +1,3 @@
+\BOOKMARK [1][-]{section.1}{verify the following}{}% 1
+\BOOKMARK [1][-]{section.2}{Use Valgrind to find race condition. Using mutex lock to fix the race condition. Argue that your changes ensures correctness}{}% 2
+\BOOKMARK [1][-]{section.3}{ Using \215cachegrind\216 and \215kcachegrind\216, identify the most expensive function calls in terms of cycles spent. Instructions for the tools are available in Lab 4. Attach screen-shots whenever necessary. }{}% 3
