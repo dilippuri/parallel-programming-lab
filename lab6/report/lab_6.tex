@@ -32,9 +32,15 @@ valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes ./val_eg <>
 Use the above command on this sample C-code to find the call-graph. Toggle the ``Cycle Detection" and ``\% Relative" menu in the top of kcachegrind to observe to menu output. Using this option, find
 \begin{itemize}
 
-\item callee map
-\item cost (in terms of cycles) associated with the most expensive function calls.
-\item cost (in terms of cycles) associated with pthread$\_$mutex$\_$lock.c and pthread$\_$mutex$\_$unlock.c
+\item callee map\\
+\includegraphics[scale=.6]{pic1.png}
+\item cost (in terms of cycles) associated with the most expensive function calls.\\
+\includegraphics[scale=.6]{pic2.png}
+\item cost (in terms of cycles) associated with pthread$\_$mutex$\_$lock.c and pthread$\_$mutex$\_$unlock.c\\
+\includegraphics[scale=.6]{pic3.png}
+\includegraphics[scale=.6]{pic4.png}
+\includegraphics[scale=.6]{pic5.png}
+\includegraphics[scale=.6]{pic6.png}
 
 \end{itemize}
 \end{enumerate}
