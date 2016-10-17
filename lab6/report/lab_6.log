@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.6)  10 OCT 2016 23:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.6)  17 OCT 2016 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,63 +1173,40 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 <pic1.png, id=7, 1082.0425pt x 547.04375pt>
 File: pic1.png Graphic file (type png)
  <use pic1.png>
-Package pdftex.def Info: pic1.png used on input line 36.
-(pdftex.def)             Requested size: 649.23051pt x 328.22878pt.
+Package pdftex.def Info: pic1.png used on input line 37.
+(pdftex.def)             Requested size: 432.80933pt x 218.81361pt.
 
-Overfull \hbox (186.61472pt too wide) in paragraph at lines 35--37
-[] 
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<pic2.png, id=29, 1086.0575pt x 538.01pt>
+<pic2.png, id=8, 1086.0575pt x 538.01pt>
 File: pic2.png Graphic file (type png)
  <use pic2.png>
-Package pdftex.def Info: pic2.png used on input line 38.
-(pdftex.def)             Requested size: 651.63953pt x 322.80849pt.
+Package pdftex.def Info: pic2.png used on input line 40.
+(pdftex.def)             Requested size: 434.4153pt x 215.20018pt.
+ [1
 
-Overfull \hbox (189.02373pt too wide) in paragraph at lines 37--39
-[] 
- []
-
-<pic3.png, id=30, 1030.85126pt x 474.77374pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic1.png>]
+<pic3.png, id=30, 761.84625pt x 442.65375pt>
 File: pic3.png Graphic file (type png)
  <use pic3.png>
-Package pdftex.def Info: pic3.png used on input line 40.
-(pdftex.def)             Requested size: 618.51553pt x 284.86644pt.
+Package pdftex.def Info: pic3.png used on input line 43.
+(pdftex.def)             Requested size: 304.7331pt x 177.05835pt.
 
 <pic4.png, id=31, 1071.00125pt x 410.53375pt>
 File: pic4.png Graphic file (type png)
  <use pic4.png>
-Package pdftex.def Info: pic4.png used on input line 41.
-(pdftex.def)             Requested size: 642.60571pt x 246.32214pt.
+Package pdftex.def Info: pic4.png used on input line 45.
+(pdftex.def)             Requested size: 428.39291pt x 164.21059pt.
 
 <pic5.png, id=32, 1052.93375pt x 309.155pt>
 File: pic5.png Graphic file (type png)
  <use pic5.png>
-Package pdftex.def Info: pic5.png used on input line 42.
-(pdftex.def)             Requested size: 631.76512pt x 185.49442pt.
+Package pdftex.def Info: pic5.png used on input line 47.
+(pdftex.def)             Requested size: 421.16605pt x 123.6598pt.
 
 <pic6.png, id=33, 697.60625pt x 696.6025pt>
 File: pic6.png Graphic file (type png)
  <use pic6.png>
-Package pdftex.def Info: pic6.png used on input line 43.
-(pdftex.def)             Requested size: 418.56697pt x 417.96472pt.
-
-Overfull \hbox (155.89973pt too wide) in paragraph at lines 39--44
-[]
- []
-
-
-Overfull \hbox (179.98991pt too wide) in paragraph at lines 39--44
-[]
- []
-
-
-Overfull \hbox (169.14932pt too wide) in paragraph at lines 39--44
-[]
- []
+Package pdftex.def Info: pic6.png used on input line 49.
+(pdftex.def)             Requested size: 279.03755pt x 278.63606pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1237,22 +1214,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./pic1.png> <./pic2.png>] [3 <./pic3.png> <./pic4.png> <./pic5.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+[2 <./pic2.png> <./pic3.png> <./pic4.png> <./pic5.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+ [3 <./pic6.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
 
-[4 <./pic6.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
- (./lab_6.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+(./lab_6.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `lab_6.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 18930 strings out of 494985
- 310459 string characters out of 6180356
- 456773 words of memory out of 5000000
+ 18929 strings out of 494985
+ 310453 string characters out of 6180356
+ 457773 words of memory out of 5000000
  21736 multiletter control sequences out of 15000+600000
  9976 words of font info for 40 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1263,10 +1240,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lab_6.pdf (4 pages, 1114327 bytes).
+Output written on lab_6.pdf (3 pages, 1048785 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
