@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Problem}{2}{0}{1}
+\beamer@sectionintoc {2}{Motivation}{3}{0}{2}
+\beamer@sectionintoc {3}{Methods}{7}{0}{3}
+\beamer@sectionintoc {4}{Tasks}{8}{0}{4}
+\beamer@sectionintoc {5}{Strategy}{9}{0}{5}
+\beamer@sectionintoc {6}{Q \& A}{13}{0}{6}
