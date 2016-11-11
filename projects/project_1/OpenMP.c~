@@ -1,9 +1,16 @@
+/*
+ ============================================================================
+ Name        : Assignment1.c
+ Author      : Punet Arora
+ Version     :
+ Description : LU Factorization using OpenMP and MPI: study of scalability
+ ============================================================================
+ */
 #include<stdio.h>
 #include <stdlib.h>
 #include <omp.h>
 #include <time.h>
 //#include <mpi.h>
-
 
 double **make2dmatrix(long n);
 void free2dmatrix(double ** M, long n);
@@ -13,14 +20,16 @@ long matrix_size,version;
 char algo;
 
 
-void decomposeOpenMP(double **A, long n){
+void decomposeOpenMP(double **A, long n)
+{
 	printf("\nDECOMPOSE OPENMP CALLED\n");
 
 	long i,j,k,rows,mymin,mymax;
 	int pid=0;
 	int nprocs;
 
-#pragma omp parallel shared(A,n,nprocs) private(i,j,k,pid,rows,mymin,mymax){
+#pragma omp parallel shared(A,n,nprocs) private(i,j,k,pid,rows,mymin,mymax)
+	{
 #ifdef _OPENMP
 		nprocs=omp_get_num_threads();
 #endif
