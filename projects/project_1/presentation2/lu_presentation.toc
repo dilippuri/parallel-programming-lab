@@ -4,4 +4,4 @@
 \beamer@sectionintoc {3}{Methods}{7}{0}{3}
 \beamer@sectionintoc {4}{Tasks}{8}{0}{4}
 \beamer@sectionintoc {5}{Strategy}{9}{0}{5}
-\beamer@sectionintoc {6}{Q \& A}{13}{0}{6}
+\beamer@sectionintoc {6}{Q \& A}{16}{0}{6}
