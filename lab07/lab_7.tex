@@ -20,9 +20,26 @@
 In computing, an optimizing compiler is a compiler that tries to minimize or maximize some attributes of an executable computer program. The most common requirement is to minimize the time taken to execute a program; a less common one is to minimize the amount of memory occupied.
 
 \section*{Optimization Table}
+\begin{tabular}{|c|p{5cm}|c|c|c|c|}
+\hline
+option& 	optimization level& 	execution time& 	code size& 	memory usage & compile time\\
+\hline
+-O0 	&optimization for compilation time (default) &	+ &	+& 	-& 	-\\
+\hline
+-O1 or -O &	optimization for code size and execution time 	&- &	-& 	+& 	+\\
+\hline
+-O2& 	optimization more for code size and execution time& 	-- 	  &	&+ &	++\\
+\hline
+-O3 &	optimization more for code size and execution time &	--- 	&  	&+ 	&+++\\
+\hline
+-Os 	&optimization for code size 	  &&	-- &&	  	++\\
+\hline
+-Ofast 	&O3 with fast none accurate math calculations &	--- &&	  	+ &	+++\\
+\hline
+\end{tabular}
 
 
-
+note:- +increase, ++increase more, +++increase even more, -reduce, --reduce more, ---reduce even more
 \section*{Methods}
 These options control various sorts of optimizations:\\
 -O\\
@@ -60,6 +77,8 @@ Example:
 	colormap[n+i] = i;
 	i++;
 	colormap[n+i] = i;
+	
+	*and many more example which we've already given at the time of demo.
 \end{lstlisting}	
 	 
 \end{document}
