@@ -60,6 +60,7 @@ int decompose(double **m) {
         l[i][i] =1;
     }
     end = clock();
+
     return 1;
 }
 

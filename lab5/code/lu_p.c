@@ -1,38 +1,12 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 FILE *fp;
 int main(void){
 fp = fopen("output_serial.txt","a+");
-int i,j,k,n;
-    //n=3;
-   // float A[3][3] = { { 1, 1, 1 }, { 1, 2, 2 }, { 1, 2, 3 } }, 
-   float L[n][n], U[n][n];//initializing matrices
-
-if(argc !=4){
-        printf("Enter the size of matrix (N x N) where N = ");
-        scanf("%lu",&matrix_size);
-
-        printf("Enter the version number V = ");
-        scanf("%lu",&version);
-    }
-    else{
-        matrix_size=atol(argv[1]);
-        version=atol(argv[2]);
-    }
-    long num_threads=atol(argv[3]);
-    if(num_threads<1){
-        num_threads=5;
-
-    }
-long i, j;
-    for (i=0;i<n;i++){
-        for (j=0;j<n;j++){
-            if(i<=j )
-                A[i][j]=i+1;
-            else
-                A[i][j]=j+1;
-
-        }
-    }
+    int i,j,k,n;
+    n=3;
+    float A[3][3] = { { 1, 1, 1 }, { 1, 2, 2 }, { 1, 2, 3 } }, L[n][n], U[n][n];//initializing matrices
 
   /*  printf("Enter matrix element:\n");
 
@@ -75,8 +49,8 @@ long i, j;
     }
     end = clock();
     time_spent = ((double)(end - begin)) / CLOCKS_PER_SEC;
-        fprintf(fp,"%ld     ", matrix_size);
-        fprintf(fp,"%ld       ",num_threads);
+        fprintf(fp,"%d     ", n);
+        //fprintf(fp,"%ld       ",num_threads);
         fprintf(fp,"%lf\n", (double)(end - begin) / CLOCKS_PER_SEC);
 
 

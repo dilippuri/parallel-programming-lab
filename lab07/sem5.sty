@@ -1,0 +1,127 @@
+% This is sty file while made by dilip puri for assignment, tutorial, labs, and report
+
+\def\fileversion{1.0}
+\def\filedate{03/08/2015}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sem5}[\filedate{} macros for assignment, tutorial, labs, and report made by dilip puri]
+
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{a4wide}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{graphics, graphicx}
+\usepackage{color}
+\usepackage{a4wide}
+\usepackage{hyperref}
+\usepackage{anysize}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage[us,12hr]{datetime}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+\usepackage{wrapfig}
+\usepackage{etex}
+\usepackage{tikz}
+\DeclareSymbolFont{largesymbols}{OMX}{cmex}{m}{n}
+
+
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage{sem5e}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{layouts}
+\usepackage{geometry}
+\geometry{top=1.6cm, left=14mm, right=14mm, bottom=1.4cm}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{newgray}{rgb}{0.7,0.75,0.7}
+
+\lstset{frame=none,
+  language=matlab,				% whatever language you can choose
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\let\@institutename\@empty
+
+\let\@coursename\@empty
+\let\@ccode\@empty
+\let\@profname\@empty
+
+\let\@author\@empty
+\let\@collab\@empty
+\let\@idt\@empty
+
+\let\@type\@empty
+\let\@typeid\@empty
+\let\@problemset\@empty
+\let\@team\@empty
+\let\@deadline\@empty
+\let\@submissiondate\@empty
+
+\newcommand{\problemset}[1]{\def\@problemset{#1}}
+\newcommand{\collab}[1]{\def\@collab{#1}}
+\newcommand{\coursename}[1]{\def\@coursename{#1}}
+\newcommand{\institutename}[1]{\def\@institutename{#1}}
+\newcommand{\ccode}[1]{\def\@ccode{#1}}
+\newcommand{\type}[1]{\def\@type{#1}}
+\newcommand{\idt}[1]{\def\@idt{#1}}
+\newcommand{\typeid}[1]{\def\@typeid{#1}}
+\newcommand{\team}[1]{\def\@team{#1}}
+\newcommand{\deadline}[1]{\def\@deadline{#1}}
+\newcommand{\profname}[1]{\def\@profname{#1}}
+\newcommand{\submissiondate}[1]{\def\@submissiondate{#1}}
+
+% Command to make the header box.
+\newcommand{\institute}{\begin{center}\begin{LARGE} \@institutename \end{LARGE}\end{center}}
+
+\newcommand{\course}{\begin{flushright}\fcolorbox{black}{newgray}{\Large{\@coursename(\@ccode)}}\\ \fcolorbox{black}{newgray}{\@profname} \end{flushright}}
+
+\newcommand{\student}{\begin{flushright}\textbf{Name} - \@author \\ \textbf{ID} - \@idt \\ \@collab \end{flushright}}
+
+\newcommand{\detail}{\begin{center}---------------------------------------------------------------------------------\\ \textbf{\@type  \- \@typeid} \\---------------------------------------------------------------------------------\end{center}}
+
+\newcommand{\submission}{\textbf{Submission Date} - \@submissiondate \hspace*{4.3cm} \textbf{Deadline} - \@deadline \\ 
+--------------------------------------------------------------------------------------------------------------------------------------\\}
+
+
+
+
+\AtBeginDocument{
+ \thispagestyle{plain}
+  \institute
+  \course
+  \student
+  \detail
+  \submission
+  \rhead{\@type \- \@typeid}
+  \lhead{\textbf{\@problemset}}
+  \cfoot{\thepage}
+  \rfoot{\@coursename}
+  \lfoot{Semester - 7}
+  \pagestyle{fancy}
+}
