@@ -15,3 +15,10 @@ Lab - 2
 problem - 1  -->
 problem - 2  -->
 problem - 3  --> 
+
+all the lab are completed.
+
+now semester is over.
+even btech over.
+
+:+1:	:smile:		:open_hands:
